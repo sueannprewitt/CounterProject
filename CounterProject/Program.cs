@@ -13,8 +13,19 @@ namespace CounterProject {
 			}
 			return total;
 		}
+		//List numbers evenly divisible by 3 between 1 and 100
+		bool IsDivisibleByThree (int nbr) {
+			return (nbr % 3 == 0);
+		}
+
+
 		void Run() {
-			Console.WriteLine($"The Factorial of 5 is {factorial(5)}");
+			//	Console.WriteLine($"The factorial of 5 is {factorial(5)}");
+			for(var idx = 0; idx <= 100; idx++) {
+				if(IsDivisibleByThree(idx)) {
+					Console.WriteLine($"{idx} is divisible by 3");
+				}
+			}
 		}
 
 		
