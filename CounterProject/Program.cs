@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace CounterProject {
 	class Program {
 		int factorial (int number) {
-			var total = 1;
+			var total = 1; 
 			for (var idx = 2; idx <= number; idx++)	{
 				total = total * idx;
 			}
